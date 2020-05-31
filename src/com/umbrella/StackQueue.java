@@ -1,15 +1,13 @@
 package com.umbrella;
 
-import java.util.Stack;
-
 /**
  * 用栈来实现队列
  */
 public class StackQueue<T> {
 
     //stack1用来存放元素
-    private Stack<T> stack1 = new Stack<>();
-    private Stack<T> stack2 = new Stack<>();
+    private Stack<T> stack1 = new ArrayStack<>();
+    private Stack<T> stack2 = new ArrayStack<>();
 
     public void push(T t) {
         stack1.push(t);
@@ -19,7 +17,7 @@ public class StackQueue<T> {
     // 而队列为先进先出（队尾存数据，对头取数据）的数据结构，故而从stack1中取数据存入stack2刚好可以模拟队列
     public T poll() {
         if (stack2.isEmpty()) {
-            while (stack1.size() > 0) {
+            while (stack1.getSize() > 0) {
                 stack2.push(stack1.pop());
             }
             if (stack2.isEmpty()) {
