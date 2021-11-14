@@ -1,5 +1,7 @@
 package com.umbrella;
 
+import com.umbrella.inter.Queue;
+
 /**
  * 循环队列
  *

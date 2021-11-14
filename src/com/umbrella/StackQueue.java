@@ -1,5 +1,7 @@
 package com.umbrella;
 
+import com.umbrella.inter.Stack;
+
 /**
  * 用栈来实现队列
  */

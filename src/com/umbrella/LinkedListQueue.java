@@ -1,5 +1,7 @@
 package com.umbrella;
 
+import com.umbrella.inter.Queue;
+
 public class LinkedListQueue<E> implements Queue<E> {
     private class Node {
         public E e;

@@ -1,5 +1,8 @@
 package com.umbrella;
 
+import com.umbrella.inter.Queue;
+import com.umbrella.inter.Stack;
+
 import java.util.Random;
 
 public class Main {

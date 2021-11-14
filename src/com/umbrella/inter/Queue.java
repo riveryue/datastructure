@@ -1,4 +1,4 @@
-package com.umbrella;
+package com.umbrella.inter;
 
 /**
  * 队列

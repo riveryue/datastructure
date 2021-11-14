@@ -1,5 +1,7 @@
 package com.umbrella;
 
+import com.umbrella.inter.Stack;
+
 /**
  * 使用链表实现栈
  *

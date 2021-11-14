@@ -1,5 +1,7 @@
 package com.umbrella;
 
+import com.umbrella.inter.Queue;
+
 /**
  * 队列的实现类 基于动态数组实现
  *
