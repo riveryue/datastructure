@@ -11,17 +11,17 @@ public class QuickSort {
             return;
         }
         int pivot = arr[left];
-        int i = left;
-        int j = right;
+        int i = left - 1;
+        int j = right + 1;
         while (i < j) {
             //从左指针开始找到第一个大于基准值的元素对应的下标
-            while (arr[i] < pivot) {
+            do {
                 i++;
-            }
+            } while (arr[i] < pivot);
             //从右指针开始找到第一个小于基准值的元素对应的下标
-            while (arr[j] > pivot) {
+            do {
                 j--;
-            }
+            } while (arr[j] > pivot);
             if (i < j) {
                 int tmp = arr[i];
                 arr[i] = arr[j];
@@ -33,7 +33,7 @@ public class QuickSort {
     }
 
     public static void main(String[] args) {
-        int[] arr = {30, 40, 60, 10, 20, 50};
+        int[] arr = {30, 40, 60, 10, 20, 50, 40};
         System.out.println(Arrays.toString(arr));
         quickSort(arr, 0, arr.length - 1);
         System.out.println(Arrays.toString(arr));
